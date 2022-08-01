@@ -40,7 +40,9 @@ pipeline{
                 }
             }
         }
-        // send email notification once everything completes
+        
+    }
+    // send email notification once everything completes
         post {
             always {
                 
@@ -50,5 +52,4 @@ pipeline{
                 
             }
         }
-    }
 }
