@@ -1,4 +1,4 @@
-# Spring REST Hello World Example
+# Spring REST Hello World Example, creating CI/CD pipeline
 
 Article link : https://www.mkyong.com/spring-boot/spring-rest-hello-world-example/
 
