@@ -40,5 +40,15 @@ pipeline{
                 }
             }
         }
+        // send email notification once everything completes
+        post {
+            always {
+                
+                emailext body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n",
+                    recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']],
+                    subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}"
+                
+            }
+        }
     }
 }
