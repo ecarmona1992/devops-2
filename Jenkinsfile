@@ -1,7 +1,7 @@
 pipeline{
     // setting up dockhub information needed to push image.
     environment {
-        registry = "https://github.com/ecarmona1992/devops-2.git"
+        registry = "ecarmona1992/devops-challenge"
         registrycredential = 'docker-hub'
         dockerimage = ''
     }
