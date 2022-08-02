@@ -4,7 +4,7 @@ pipeline{
         registry = "ecarmona1992/devops-challenge"
         registrycredential = 'docker-hub'
         dockerimage = ''
-        SONAR_TOKEN = '2b1e6273ebac90a0569ece07dfd614b6a29add20'
+        SONAR_TOKEN = 'SONAR_TOKEN'
     }
     agent any
 
