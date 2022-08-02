@@ -20,16 +20,13 @@ pipeline{
                 echo "passed test"
             }
         }
-        // stage('SonarQube Analysis') {
-        //     steps{
-        //         script{
-        //         def mvn = tool 'maven-3.8.6';
-        //         withSonarQubeEnv('sonarqube-9.5') {
-        //         sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=devops-challege"
-        //             }
-        //         }
-        //     }
-        // }
+        stage('SonarQube Analysis') {
+            steps{
+                script{
+                sh "mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=devops-2"
+                }
+            }
+        }
         stage("build"){
             steps{
                 script{
