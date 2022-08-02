@@ -24,7 +24,7 @@ pipeline{
                 steps{
                     script{
                     def mvn = tool 'maven-3.8.6';
-                    withSonarQubeEnv() {
+                    withSonarQubeEnv('sonarqube-9.5') {
                     sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=devops-challege"
                 }
                 }
