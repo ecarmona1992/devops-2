@@ -20,6 +20,12 @@ pipeline{
                 echo "passed test"
             }
         }
+            stage('SonarQube Analysis') {
+                def mvn = tool 'maven-3.8.6';
+                withSonarQubeEnv() {
+                sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=devops-challege"
+                }
+            }
         stage("build"){
             steps{
                 script{
