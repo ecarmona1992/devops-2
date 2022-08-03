@@ -23,7 +23,7 @@ pipeline{
         stage('SonarQube Analysis') {
             steps{
                 script{
-                sh "mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=devops-2"
+                sh "mvn -e verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=devops-2"
                 }
             }
         }
