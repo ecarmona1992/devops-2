@@ -20,6 +20,11 @@ pipeline{
                 echo "passed test"
             }
         }
+        stage("build"){
+            steps{
+                sh "mvn clean package"
+            }
+        }
         stage('SonarQube Analysis') {
             steps{
                 script{
