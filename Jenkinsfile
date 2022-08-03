@@ -4,8 +4,7 @@ pipeline{
         registry = "ecarmona1992/devops-challenge"
         registrycredential = 'docker-hub'
         dockerimage = ''
-        SONAR_TOKEN = 'SONAR_TOKEN'
-    }
+            }
     agent any
 
     stages{
