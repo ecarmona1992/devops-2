@@ -21,7 +21,7 @@
         <downloadSources>true</downloadSources>
         <downloadJavadocs>true</downloadJavadocs>
 
-        <sonar.organization>ecarmona1992</sonar.organization>
+        <sonar.organization>devops-challenge</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
     <dependencies>
