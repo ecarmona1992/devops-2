@@ -1,5 +1,5 @@
 # Spring REST Hello World Example, creating CI/CD pipeline to kubernetes cluster
-# uses sonarqube to check code quality before build
+# uses sonarqube to check code quality every new push, pull
 
 Article link : https://www.mkyong.com/spring-boot/spring-rest-hello-world-example/
 
