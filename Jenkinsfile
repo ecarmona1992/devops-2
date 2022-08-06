@@ -25,13 +25,6 @@ pipeline{
                 sh "mvn clean package"
             }
         }
-        stage('SonarQube Analysis') {
-            steps{
-                script{
-                sh "mvn -X verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=devops-2"
-                }
-            }
-        }
         stage("build"){
             steps{
                 script{
